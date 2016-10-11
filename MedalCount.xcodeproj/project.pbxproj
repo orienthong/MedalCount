@@ -20,7 +20,8 @@
 		0EDB647D1D3248B30000FA79 /* GamesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB64791D3248B30000FA79 /* GamesDataStore.swift */; };
 		0EDB99A81D32A1860005CA3E /* MedalCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB99A71D32A1860005CA3E /* MedalCountViewController.swift */; };
 		950818D11D480EE2003B31DC /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950818D01D480EE2003B31DC /* GamesTableViewCell.swift */; };
-		C59C75B91DAC615200CAA6F1 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C75B81DAC615200CAA6F1 /* SlideInPresentationManager.swift */; };
+		C59C75BC1DAC624D00CAA6F1 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C75BB1DAC624D00CAA6F1 /* SlideInPresentationManager.swift */; };
+		C59C75BE1DAC65E400CAA6F1 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C75BD1DAC65E400CAA6F1 /* SlideInPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,8 @@
 		0EDB64791D3248B30000FA79 /* GamesDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesDataStore.swift; sourceTree = "<group>"; };
 		0EDB99A71D32A1860005CA3E /* MedalCountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedalCountViewController.swift; sourceTree = "<group>"; };
 		950818D01D480EE2003B31DC /* GamesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
-		C59C75B81DAC615200CAA6F1 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInPresentationManager.swift; path = "../../../../Desktop/PBROrbs-iOS10-SceneKit/PBROrbs/SlideInPresentationManager.swift"; sourceTree = "<group>"; };
+		C59C75BB1DAC624D00CAA6F1 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
+		C59C75BD1DAC65E400CAA6F1 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		0E15D2261D2ADA7E00A2E90B /* MedalCount */ = {
 			isa = PBXGroup;
 			children = (
+				C59C75BA1DAC623100CAA6F1 /* Presention */,
 				0E49B1C11D3239EE00A8B416 /* Controllers */,
 				0EDDD5501D317792005DF417 /* Model */,
 				950818CF1D480EC2003B31DC /* Views */,
@@ -111,10 +114,18 @@
 		950818CF1D480EC2003B31DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C59C75B81DAC615200CAA6F1 /* SlideInPresentationManager.swift */,
 				950818D01D480EE2003B31DC /* GamesTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C59C75BA1DAC623100CAA6F1 /* Presention */ = {
+			isa = PBXGroup;
+			children = (
+				C59C75BB1DAC624D00CAA6F1 /* SlideInPresentationManager.swift */,
+				C59C75BD1DAC65E400CAA6F1 /* SlideInPresentationController.swift */,
+			);
+			name = Presention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C59C75B91DAC615200CAA6F1 /* SlideInPresentationManager.swift in Sources */,
+				C59C75BC1DAC624D00CAA6F1 /* SlideInPresentationManager.swift in Sources */,
 				0EDB647B1D3248B30000FA79 /* MedalWinner.swift in Sources */,
 				0E15D22A1D2ADA7E00A2E90B /* MainViewController.swift in Sources */,
 				0EDB64651D32403B0000FA79 /* GamesTableViewController.swift in Sources */,
@@ -200,6 +211,7 @@
 				0E15D2281D2ADA7E00A2E90B /* AppDelegate.swift in Sources */,
 				0EDB647A1D3248B30000FA79 /* MedalCount.swift in Sources */,
 				0EDB99A81D32A1860005CA3E /* MedalCountViewController.swift in Sources */,
+				C59C75BE1DAC65E400CAA6F1 /* SlideInPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,6 +23,9 @@
 import UIKit
 
 final class MainViewController: UIViewController {
+  
+  /// 本来Delegate应该为weak ,但是这里的delegate 要重复使用适应不同的presentation styles
+  lazy var slideInTransitionDelegate = SlideInPresentationManager()
 
   // MARK: - IBOutlets
   @IBOutlet weak var yearLabel: UILabel!
@@ -50,12 +53,25 @@ final class MainViewController: UIViewController {
     if let controller = segue.destination as? GamesTableViewController {
       if segue.identifier == "SummerSegue" {
         controller.gamesArray = dataStore.summer
+        
+        slideInTransitionDelegate.direction = .left
       } else if segue.identifier == "WinterSegue" {
         controller.gamesArray = dataStore.winter
+        
+        slideInTransitionDelegate.direction = .right
       }
       controller.delegate = self
+      
+      controller.transitioningDelegate = slideInTransitionDelegate
+      
+      controller.modalPresentationStyle = .custom
+      
     } else if let controller = segue.destination as? MedalCountViewController {
       controller.medalCount = presentedGames?.medalCount
+      
+      slideInTransitionDelegate.direction = .bottom
+      controller.transitioningDelegate = slideInTransitionDelegate
+      controller.modalPresentationStyle = .custom
     }
   }
 }
@@ -77,6 +93,8 @@ private extension MainViewController {
     yearLabel.text = presentedGames.seasonYear
     medalCountButton.isHidden = false
   }
+  
+  
 }
 
 // MARK: - GamesTableViewControllerDelegate
