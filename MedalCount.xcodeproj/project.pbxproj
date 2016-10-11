@@ -22,6 +22,7 @@
 		950818D11D480EE2003B31DC /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950818D01D480EE2003B31DC /* GamesTableViewCell.swift */; };
 		C59C75BC1DAC624D00CAA6F1 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C75BB1DAC624D00CAA6F1 /* SlideInPresentationManager.swift */; };
 		C59C75BE1DAC65E400CAA6F1 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C75BD1DAC65E400CAA6F1 /* SlideInPresentationController.swift */; };
+		C59C75C01DAC706800CAA6F1 /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C75BF1DAC706800CAA6F1 /* SlideInPresentationAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		950818D01D480EE2003B31DC /* GamesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 		C59C75BB1DAC624D00CAA6F1 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
 		C59C75BD1DAC65E400CAA6F1 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
+		C59C75BF1DAC706800CAA6F1 /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				C59C75BB1DAC624D00CAA6F1 /* SlideInPresentationManager.swift */,
 				C59C75BD1DAC65E400CAA6F1 /* SlideInPresentationController.swift */,
+				C59C75BF1DAC706800CAA6F1 /* SlideInPresentationAnimator.swift */,
 			);
 			name = Presention;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59C75BC1DAC624D00CAA6F1 /* SlideInPresentationManager.swift in Sources */,
+				C59C75C01DAC706800CAA6F1 /* SlideInPresentationAnimator.swift in Sources */,
 				0EDB647B1D3248B30000FA79 /* MedalWinner.swift in Sources */,
 				0E15D22A1D2ADA7E00A2E90B /* MainViewController.swift in Sources */,
 				0EDB64651D32403B0000FA79 /* GamesTableViewController.swift in Sources */,
