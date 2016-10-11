@@ -37,6 +37,7 @@ class SlideInPresentationController: UIPresentationController {
   override func dismissalTransitionWillBegin() {
     guard let coordinator = presentedViewController.transitionCoordinator else {
       dimmingView.alpha = 0.0
+      return
     }
     coordinator.animate(alongsideTransition: { (_) in
       self.dimmingView.alpha = 0.0
@@ -55,8 +56,6 @@ class SlideInPresentationController: UIPresentationController {
       return CGSize(width: parentSize.width, height: parentSize.height*(2.0/3.0))
     }
   }
-  
-  /// The rectangle of the presented view controller’s view, specified in the container view’s coordinate system.
   override var frameOfPresentedViewInContainerView: CGRect {
     var frame: CGRect = .zero
     frame.size = size(forChildContentContainer: presentedViewController, withParentContainerSize: containerView!.bounds.size)
@@ -69,9 +68,10 @@ class SlideInPresentationController: UIPresentationController {
       frame.origin.y = containerView!.frame.height*(1.0/3.0)
     case .top:
       frame.origin = .zero
+    
     }
+    return frame
   }
-  
 }
 
 private extension SlideInPresentationController {
